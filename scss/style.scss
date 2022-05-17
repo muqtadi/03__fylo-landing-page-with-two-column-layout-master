@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
+    url('/fonts/Raleway/Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+    url('/fonts/Raleway/Raleway-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+    url('/fonts/Open_Sans/OpenSans-Regular.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  padding: 20px;
+}
