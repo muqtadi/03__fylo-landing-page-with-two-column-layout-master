@@ -1,0 +1,103 @@
+.main{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  .main_content{
+    max-width: 620px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+
+    .main__title{
+      color: rgb(16, 11, 67);
+      font-size: 34px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+    .main__paragraph{
+      font-size: 16px;
+      line-height: 20px;
+      color: rgb(16, 11, 67);
+      font-family: 'Raleway';
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+    .main_input{
+      display: flex;
+      justify-content: center;
+
+      .main_input_active{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+
+        .input__item{
+          width: 280px;
+          height: 40px;
+          border: 1px solid;
+          border-radius: 5px;
+          outline: none;
+          padding-left: 10px;
+          font-size: 18px;
+        }
+
+        .main__btn{
+          width: 200px;
+          height: 40px;
+          background-color: rgb(47, 101, 249);
+          border: none;
+          border-radius: 5px;
+          font-size: 18px;
+          color: #fff;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+          cursor: pointer;
+          &:hover{
+            background-color: rgb(107, 155, 255);
+          }
+        }
+      }
+    }
+  }
+
+  .main_body_img{
+    max-width: 620px;
+    max-height: 500px;
+    img{width: 100%; height: 100%;}
+  }
+}
+
+@media(max-width: 1024px){
+  .main{
+    flex-direction: column;
+    margin-top: 80px;
+
+    .main_body_img{order: 1; margin-bottom: 40px;}
+
+    .main_content{
+      order: 2;
+      padding: 0 20px;
+      text-align: center;
+
+      .main_input{
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+
+        .main_input_active{
+          width: 100%;
+          flex-direction: column;
+          gap: 20px;
+
+          .input__item{width: 100%;}
+          .main__btn{width: 100%;}
+
+
+        }
+      }
+    }
+  }
+}
