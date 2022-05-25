@@ -1,0 +1,94 @@
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(249,248,254);
+  padding: 100px 25px;
+  position: relative;
+
+  .team__wave{width: 100%; height: 60px; position: absolute; top: -58px; left: 0;}
+  .team__img{
+    max-width: 400px;
+    width: 100%;
+    height: 300px
+  }
+  .team__content{
+    max-width: 500px;
+
+    .team__title{color: rgb(8,3,59); text-align: center; font-size: 24px; margin: 100px 0 40px;}
+    .team__item{color: rgb(113,110,129); line-height: 25px; font-family: 'Open Sans'; font-weight: 400;}
+    .team__paragraph1{margin-bottom: 20px;}
+    .see__more__wrapp{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 170px;
+      height: 38px;
+      font-family: 'Open Sans';
+      color: rgb(73,157,142);
+      position: relative;
+      margin: 40px auto 60px;
+
+      &::after{content: ''; width: 100%; height: 2px; background-color: rgb(73,157,142); position: absolute; left: 0; bottom: 0;}
+
+      .icon__arrow{width: 16px; height: 16px; border-radius: 50px; margin-top: 5px; padding: 4px;background-color: rgb(73, 157, 142);
+        path{fill: #fff;}
+      }
+    }
+  }
+  .founter__card{
+    max-width: 400px;
+    max-height: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    color: rgb(11,10,50);
+    box-shadow: 0 0 10px 5px rgba(56, 49, 49, 0.1);
+
+    .quotes__img{width: 18px; height: 18px;}
+    .founter__card__content{font-family: 'Open Sans'; letter-spacing: .4px; line-height: 28px; font-size: 16px;}
+    .about__ceo{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+
+      img{width: 34px; height: 34px; border-radius: 50px;}
+      .about__ceo__content{
+        font-family: 'Raleway';
+
+        .ceo__name{font-size: 16px; font-weight: 700; margin-bottom: 4px; letter-spacing: .5px;}
+        .ceo__jobs{font-size: 13px;}
+      }
+    }
+  }
+}
+// ____________________________________________LAPTOP DEVIVE
+@media(min-width: 1024px){
+  .team{
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 100px 50px;
+    gap: 20px;
+
+
+    .team__content{
+      order: 1;
+      max-width: 600px;
+      text-align: left;
+
+      .team__title{font-size: 35px; text-align: left;}
+      .see__more__wrapp{margin-left: 0; cursor: pointer;}
+      .see__more__wrapp:hover{
+        color: rgb(139, 206, 197);
+        &::after{background-color: rgb(139, 206, 197);}
+        .icon__arrow{background-color:rgb(139, 206, 197);}
+
+      }
+    }
+    .team__img{order: 2; max-width: 550px; height: 400px;}
+    .founter__card{order: 3; }
+  }
+}

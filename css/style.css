@@ -68,7 +68,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -229,6 +229,209 @@
     margin: 0;
   }
   .main .main_content .main_input .main_input_active .valid__msg {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f8fe;
+  padding: 100px 25px;
+  position: relative;
+}
+
+.team .team__wave {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: -58px;
+  left: 0;
+}
+
+.team .team__img {
+  max-width: 400px;
+  width: 100%;
+  height: 300px;
+}
+
+.team .team__content {
+  max-width: 500px;
+}
+
+.team .team__content .team__title {
+  color: #08033b;
+  text-align: center;
+  font-size: 24px;
+  margin: 100px 0 40px;
+}
+
+.team .team__content .team__item {
+  color: #716e81;
+  line-height: 25px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.team .team__content .team__paragraph1 {
+  margin-bottom: 20px;
+}
+
+.team .team__content .see__more__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 170px;
+  height: 38px;
+  font-family: 'Open Sans';
+  color: #499d8e;
+  position: relative;
+  margin: 40px auto 60px;
+}
+
+.team .team__content .see__more__wrapp::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #499d8e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.team .team__content .see__more__wrapp .icon__arrow {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  margin-top: 5px;
+  padding: 4px;
+  background-color: #499d8e;
+}
+
+.team .team__content .see__more__wrapp .icon__arrow path {
+  fill: #fff;
+}
+
+.team .founter__card {
+  max-width: 400px;
+  max-height: 320px;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  color: #0b0a32;
+  -webkit-box-shadow: 0 0 10px 5px rgba(56, 49, 49, 0.1);
+          box-shadow: 0 0 10px 5px rgba(56, 49, 49, 0.1);
+}
+
+.team .founter__card .quotes__img {
+  width: 18px;
+  height: 18px;
+}
+
+.team .founter__card .founter__card__content {
+  font-family: 'Open Sans';
+  letter-spacing: .4px;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.team .founter__card .about__ceo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.team .founter__card .about__ceo img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+}
+
+.team .founter__card .about__ceo .about__ceo__content {
+  font-family: 'Raleway';
+}
+
+.team .founter__card .about__ceo .about__ceo__content .ceo__name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: .5px;
+}
+
+.team .founter__card .about__ceo .about__ceo__content .ceo__jobs {
+  font-size: 13px;
+}
+
+@media (min-width: 1024px) {
+  .team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 100px 50px;
+    gap: 20px;
+  }
+  .team .team__content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 600px;
+    text-align: left;
+  }
+  .team .team__content .team__title {
+    font-size: 35px;
+    text-align: left;
+  }
+  .team .team__content .see__more__wrapp {
+    margin-left: 0;
+    cursor: pointer;
+  }
+  .team .team__content .see__more__wrapp:hover {
+    color: #8bcec5;
+  }
+  .team .team__content .see__more__wrapp:hover::after {
+    background-color: #8bcec5;
+  }
+  .team .team__content .see__more__wrapp:hover .icon__arrow {
+    background-color: #8bcec5;
+  }
+  .team .team__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 550px;
+    height: 400px;
+  }
+  .team .founter__card {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
