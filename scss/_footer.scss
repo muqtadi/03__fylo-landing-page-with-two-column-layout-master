@@ -1,0 +1,80 @@
+.footer{
+  max-height: 986px;
+  background-color: rgb(7, 4, 59);
+  padding: 100px 20px;
+  color: #fff;
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .contact{
+      .logo img{
+        width: 180px;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+      .contact__active{
+        .contact__active__item{display: flex; gap: 15px; align-items: center; font-family: 'Open Sans';}
+        .phone{margin-bottom: 15px;}
+      }
+    }
+    .aboutUs{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .links ul{list-style-type: none; display: flex; flex-direction: column;}
+      .links ul li{padding-bottom: 15px;}
+      .links ul li a{text-decoration: none; color: #fff;}
+      .links ul li a:hover{color: rgb(110, 123, 193);}
+    }
+
+    .socialMessenger{
+      display: flex;
+      gap: 20px;
+
+      .social__link{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        &:hover {
+            color: rgb(110, 123, 193);
+            .socialMessenter__item path{
+              fill: rgb(110, 154, 255);
+            }
+          }
+
+        .socialMessenter__item{
+          padding: 10px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px){
+  .footer{
+    .container{
+      flex-direction: row;
+      justify-content: space-between;
+      height: 200px;
+      .aboutUs{
+        max-width: 400px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 75px;
+      }
+      .socialMessenger{
+        margin-top: 70px;
+      }
+    }
+  }
+}
